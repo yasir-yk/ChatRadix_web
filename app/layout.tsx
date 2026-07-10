@@ -17,9 +17,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "ChatRadix - Automated WhatsApp Commerce for Shopify",
   description: "Leverage official Meta WhatsApp API to automate order confirmations, abandoned cart recovery, shipping updates, and customer support for scaling Shopify brands.",
-  icons: {
-    icon: "/favicon.ico",
-  },
 };
 
 export default function RootLayout({

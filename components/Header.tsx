@@ -24,7 +24,7 @@ export default function Header() {
     { label: "Features", href: "#features" },
     { label: "How It Works", href: "#how-it-works" },
     { label: "About", href: "#about" },
-    { label: "Pricing", href: "#pricing" },
+    { label: "Contact", href: "#contact" },
   ];
 
   return (
@@ -59,7 +59,7 @@ export default function Header() {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center">
             <a
-              href="#pricing"
+              href="#contact"
               className="relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-meta-blue to-cyan-500 p-[1.5px] font-semibold text-white shadow-lg shadow-meta-blue/20 transition-all duration-300 hover:shadow-meta-blue/40 hover:scale-105"
             >
               <span className="rounded-full bg-[#030712] px-6 py-2 text-sm transition-all duration-300 hover:bg-transparent">
@@ -93,7 +93,7 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="#pricing"
+              href="#contact"
               onClick={() => setIsMobileMenuOpen(false)}
               className="mt-2 w-full text-center rounded-full bg-gradient-to-r from-meta-blue to-cyan-500 py-3 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-[1.02]"
             >

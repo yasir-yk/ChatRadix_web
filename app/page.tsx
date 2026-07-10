@@ -23,7 +23,6 @@ import {
 import DashboardMockup from "@/components/DashboardMockup";
 
 export default function Home() {
-  const [billingPeriod, setBillingPeriod] = useState<"monthly" | "yearly">("monthly");
   const [formSubmitted, setFormSubmitted] = useState(false);
 
   const fadeInUp = {
@@ -90,59 +89,6 @@ export default function Home() {
     }
   ];
 
-  const pricingTiers = [
-    {
-      name: "Starter",
-      desc: "Perfect for scaling stores getting started with WhatsApp automation.",
-      monthlyPrice: 19,
-      yearlyPrice: 15,
-      features: [
-        "1,000 automated conversations/mo",
-        "Official Meta API integration",
-        "Standard order confirmation templates",
-        "Basic cart recovery flows",
-        "Email support",
-        "Standard analytics"
-      ],
-      popular: false,
-      cta: "Start Free Trial"
-    },
-    {
-      name: "Growth",
-      desc: "Our most popular tier, designed to unlock full automation & recovery.",
-      monthlyPrice: 49,
-      yearlyPrice: 39,
-      features: [
-        "5,000 automated conversations/mo",
-        "Meta Green Tick application assistance",
-        "Advanced smart cart recovery",
-        "Bulk broadcast marketing campaigns",
-        "Priority live chat support",
-        "Detailed ROI attribution dashboard",
-        "Custom template creation"
-      ],
-      popular: true,
-      cta: "Install Now"
-    },
-    {
-      name: "Scale",
-      desc: "Built for high-volume enterprise stores requiring custom systems.",
-      monthlyPrice: 99,
-      yearlyPrice: 79,
-      features: [
-        "15,000 automated conversations/mo",
-        "Custom webhook integrations",
-        "Dedicated Meta account manager",
-        "Custom developer API access",
-        "Tailored onboarding & automation setup",
-        "24/7 Phone & WhatsApp priority support",
-        "Multi-store master dashboard"
-      ],
-      popular: false,
-      cta: "Talk to Expert"
-    }
-  ];
-
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setFormSubmitted(true);
@@ -172,31 +118,25 @@ export default function Home() {
 
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.1]">
-              Automated{" "}
+              Automate{" "}
               <span className="bg-gradient-to-r from-meta-blue to-cyan-400 bg-clip-text text-transparent">
-                WhatsApp Commerce
+                Shopify WhatsApp
               </span>{" "}
-              for Shopify
+              Flows
             </h1>
 
             {/* Subheadline */}
-            <p className="text-base sm:text-lg text-slate-300 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Ditch low-open emails. Engage buyers instantly on the world&apos;s most popular chat app. Automate order updates, recover abandoned checkouts, and skyrocket sales with 98% open rates.
+            <p className="text-base sm:text-lg text-slate-300 max-w-md mx-auto lg:mx-0 leading-relaxed">
+              Connect official Meta API. Automate order updates, recover carts, and support buyers instantly.
             </p>
 
-            {/* Dual CTAs */}
+            {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mt-2">
               <a
-                href="#pricing"
+                href="#contact"
                 className="w-full sm:w-auto px-8 py-4 rounded-full font-bold text-white bg-gradient-to-r from-meta-blue to-cyan-500 hover:from-meta-blue hover:to-cyan-400 shadow-xl shadow-meta-blue/20 hover:shadow-meta-blue/40 transition-all duration-300 hover:scale-103 text-center flex items-center justify-center gap-2"
               >
                 Install on Shopify <ArrowRight className="h-4 w-4" />
-              </a>
-              <a
-                href="#how-it-works"
-                className="w-full sm:w-auto px-8 py-4 rounded-full font-bold text-slate-300 border border-slate-800 hover:border-slate-700 hover:text-white hover:bg-slate-900/40 transition-all duration-300 flex items-center justify-center gap-2 text-center"
-              >
-                <Play className="h-4 w-4 fill-slate-300" /> Watch Demo
               </a>
             </div>
 
@@ -381,104 +321,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --- PRICING SECTION --- */}
-      <section id="pricing" className="py-20 md:py-28 px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-900 z-10 relative">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 w-full max-w-5xl h-[400px] radial-glow pointer-events-none z-0" />
 
-        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          <h2 className="text-xs font-bold uppercase tracking-widest text-meta-blue">Flexible Plans</h2>
-          <p className="mt-3 text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Pricing Built for Scaling Brands
-          </p>
-          <p className="mt-4 text-base sm:text-lg text-slate-400">
-            Start free, connect Meta in minutes, and scale your WhatsApp flows as your Shopify store grows.
-          </p>
-
-          {/* Toggle Monthly/Yearly */}
-          <div className="mt-8 flex items-center justify-center gap-3">
-            <span className={`text-xs font-semibold uppercase tracking-wider transition-colors ${billingPeriod === "monthly" ? "text-white" : "text-slate-500"}`}>
-              Monthly
-            </span>
-            <button
-              onClick={() => setBillingPeriod(billingPeriod === "monthly" ? "yearly" : "monthly")}
-              className="h-7 w-12 rounded-full bg-slate-900 border border-slate-800 p-0.5 relative transition-colors focus:outline-none"
-            >
-              <div
-                className={`h-5 w-5 rounded-full bg-meta-blue transition-transform duration-300 ${
-                  billingPeriod === "yearly" ? "translate-x-6" : "translate-x-0"
-                }`}
-              />
-            </button>
-            <span className={`text-xs font-semibold uppercase tracking-wider transition-colors flex items-center gap-1.5 ${billingPeriod === "yearly" ? "text-white" : "text-slate-500"}`}>
-              Yearly
-              <span className="bg-emerald-950 text-emerald-400 text-[9px] font-black px-2 py-0.5 rounded border border-emerald-900">
-                Save 20%
-              </span>
-            </span>
-          </div>
-        </div>
-
-        {/* Pricing Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch relative z-10">
-          {pricingTiers.map((tier) => (
-            <div
-              key={tier.name}
-              className={`rounded-2xl bg-slate-950/60 p-8 flex flex-col justify-between relative transition-all duration-300 ${
-                tier.popular
-                  ? "border-[2px] border-meta-blue shadow-[0_0_35px_rgba(6,104,225,0.25)] glow-active transform scale-[1.03] md:translate-y-[-8px] z-10"
-                  : "border border-slate-900 shadow-xl"
-              }`}
-            >
-              {tier.popular && (
-                <span className="absolute top-0 right-1/2 translate-x-1/2 translate-y-[-50%] bg-gradient-to-r from-meta-blue to-cyan-500 text-white text-[10px] font-black uppercase tracking-widest px-4.5 py-1.5 rounded-full shadow-lg">
-                  Most Popular
-                </span>
-              )}
-
-              <div>
-                <h3 className="text-xl font-bold text-white">{tier.name}</h3>
-                <p className="mt-2.5 text-xs text-slate-400 leading-normal">{tier.desc}</p>
-
-                {/* Price Display */}
-                <div className="mt-6 flex items-baseline gap-1 text-white">
-                  <span className="text-4xl sm:text-5xl font-black">
-                    ${billingPeriod === "monthly" ? tier.monthlyPrice : tier.yearlyPrice}
-                  </span>
-                  <span className="text-sm font-semibold text-slate-500">/mo</span>
-                </div>
-                {billingPeriod === "yearly" && (
-                  <span className="text-[10px] text-green-400 font-bold mt-1 block">
-                    Billed annually (${(tier.yearlyPrice * 12).toFixed(0)}/yr)
-                  </span>
-                )}
-
-                {/* Features List */}
-                <ul className="mt-8 space-y-3.5 border-t border-slate-900 pt-6">
-                  {tier.features.map((feat) => (
-                    <li key={feat} className="flex items-start gap-2.5 text-sm text-slate-300">
-                      <Check className="h-4.5 w-4.5 text-meta-blue flex-shrink-0 mt-0.5" />
-                      <span>{feat}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="mt-8 pt-4">
-                <a
-                  href="#contact"
-                  className={`w-full py-3 px-6 rounded-xl font-semibold text-sm transition-all duration-300 text-center block ${
-                    tier.popular
-                      ? "bg-meta-blue hover:bg-meta-blue/90 text-white shadow-lg shadow-meta-blue/20"
-                      : "bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 hover:text-white"
-                  }`}
-                >
-                  {tier.cta}
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* --- CONTACT & LEAD FORM --- */}
       <section id="contact" className="py-20 md:py-28 px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-900 z-10 relative">

@@ -57,8 +57,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#pricing" className="text-sm text-slate-400 hover:text-white transition-colors">
-                  Pricing
+                <a href="#contact" className="text-sm text-slate-400 hover:text-white transition-colors">
+                  Contact
                 </a>
               </li>
               <li>
