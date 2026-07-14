@@ -142,7 +142,7 @@ export default function PrivacyPolicy() {
               </li>
             </ul>
             <p className="mt-2">
-              To trigger data access or erasure requests, merchants can email our privacy team directly at <a href="mailto:chatradix@gmail.com" className="text-meta-blue hover:underline">chatradix@gmail.com</a>.
+              To trigger data access or erasure requests, merchants can email our privacy team directly at <a href="mailto:info@chatradix.com" className="text-meta-blue hover:underline">info@chatradix.com</a>.
             </p>
           </section>
 
@@ -155,8 +155,8 @@ export default function PrivacyPolicy() {
             </p>
             <div className="flex flex-col gap-1 text-sm">
               <span className="text-xs text-slate-500 font-bold uppercase tracking-wider">Email Inquiry</span>
-              <a href="mailto:chatradix@gmail.com" className="text-meta-blue hover:underline font-semibold mt-0.5">
-                chatradix@gmail.com
+              <a href="mailto:info@chatradix.com" className="text-meta-blue hover:underline font-semibold mt-0.5">
+                info@chatradix.com
               </a>
             </div>
           </section>

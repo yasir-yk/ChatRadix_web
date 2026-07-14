@@ -24,7 +24,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-4 mt-2">
               <a
-                href="mailto:chatradix@gmail.com"
+                href="mailto:info@chatradix.com"
                 className="flex items-center justify-center h-9 w-9 rounded-lg border border-slate-800 text-slate-400 hover:text-white hover:border-slate-700 transition-colors"
                 title="Email Us"
               >
@@ -66,17 +66,13 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               <li className="flex items-center gap-2.5 text-sm text-slate-400">
                 <Mail className="h-4 w-4 text-meta-blue flex-shrink-0" />
-                <a href="mailto:chatradix@gmail.com" className="hover:text-white transition-colors break-all">
-                  chatradix@gmail.com
+                <a href="mailto:info@chatradix.com" className="hover:text-white transition-colors break-all">
+                  info@chatradix.com
                 </a>
               </li>
               <li className="flex items-start gap-2.5 text-sm text-slate-400">
                 <MapPin className="h-4 w-4 text-meta-blue flex-shrink-0 mt-0.5" />
                 <span>171, UMER BLOCK, SECTOR-B, BAHRIA TOWN, Lahore</span>
-              </li>
-              <li className="flex items-start gap-2.5 text-sm text-slate-400">
-                <MapPin className="h-4 w-4 text-meta-blue flex-shrink-0 mt-0.5" />
-                <span>MOHALA KABIR STREET, AHATA HAKIM CHAND, URDU BAZAR, Lahore, Lahore.</span>
               </li>
             </ul>
           </div>

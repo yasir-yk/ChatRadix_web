@@ -339,7 +339,7 @@ export default function Home() {
 
             <div className="mt-4 flex flex-col gap-4">
               <a 
-                href="mailto:chatradix@gmail.com" 
+                href="mailto:info@chatradix.com" 
                 className="flex items-center gap-3.5 p-4 rounded-xl border border-slate-900 bg-slate-950/40 hover:border-slate-800 transition-colors"
               >
                 <div className="p-2.5 rounded-lg bg-meta-blue/10 text-meta-blue">
@@ -347,7 +347,7 @@ export default function Home() {
                 </div>
                 <div>
                   <span className="text-xs text-slate-500 block">Email Us</span>
-                  <span className="text-sm font-semibold text-slate-200">chatradix@gmail.com</span>
+                  <span className="text-sm font-semibold text-slate-200">info@chatradix.com</span>
                 </div>
               </a>
 
