@@ -3,7 +3,7 @@
 import React from "react";
 import Logo from "./Logo";
 import Link from "next/link";
-import { Mail, Phone, MessageSquare, Shield, Globe, ExternalLink } from "lucide-react";
+import { Mail, Phone, MessageSquare, Shield, Globe, ExternalLink, MapPin } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -29,15 +29,6 @@ export default function Footer() {
                 title="Email Us"
               >
                 <Mail className="h-4 w-4" />
-              </a>
-              <a
-                href="https://wa.me/923065335593"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center h-9 w-9 rounded-lg border border-slate-800 text-slate-400 hover:text-white hover:border-slate-700 transition-colors"
-                title="WhatsApp Support"
-              >
-                <MessageSquare className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -79,22 +70,13 @@ export default function Footer() {
                   chatradix@gmail.com
                 </a>
               </li>
-              <li className="flex items-center gap-2.5 text-sm text-slate-400">
-                <Phone className="h-4 w-4 text-meta-blue flex-shrink-0" />
-                <a href="tel:+923065335593" className="hover:text-white transition-colors">
-                  +923065335593
-                </a>
+              <li className="flex items-start gap-2.5 text-sm text-slate-400">
+                <MapPin className="h-4 w-4 text-meta-blue flex-shrink-0 mt-0.5" />
+                <span>171, UMER BLOCK, SECTOR-B, BAHRIA TOWN, Lahore</span>
               </li>
-              <li className="flex items-center gap-2.5 text-sm text-slate-400">
-                <MessageSquare className="h-4 w-4 text-green-500 flex-shrink-0" />
-                <a
-                  href="https://wa.me/923065335593"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors flex items-center gap-1"
-                >
-                  Live WhatsApp Chat <ExternalLink className="h-3 w-3 inline" />
-                </a>
+              <li className="flex items-start gap-2.5 text-sm text-slate-400">
+                <MapPin className="h-4 w-4 text-meta-blue flex-shrink-0 mt-0.5" />
+                <span>MOHALA KABIR STREET, AHATA HAKIM CHAND, URDU BAZAR, Lahore, Lahore.</span>
               </li>
             </ul>
           </div>

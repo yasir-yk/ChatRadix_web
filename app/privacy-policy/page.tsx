@@ -153,19 +153,11 @@ export default function PrivacyPolicy() {
             <p className="mb-4">
               For any questions, concerns, or requests regarding this Privacy Policy or your data, please contact the ChatRadix privacy officer:
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-              <div className="flex flex-col">
-                <span className="text-xs text-slate-500 font-bold uppercase tracking-wider">Email Inquiry</span>
-                <a href="mailto:chatradix@gmail.com" className="text-meta-blue hover:underline font-semibold mt-0.5">
-                  chatradix@gmail.com
-                </a>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xs text-slate-500 font-bold uppercase tracking-wider">Phone / WhatsApp</span>
-                <a href="tel:+923065335593" className="text-slate-300 font-semibold mt-0.5 hover:text-white transition-colors">
-                  +92 306 5335593
-                </a>
-              </div>
+            <div className="flex flex-col gap-1 text-sm">
+              <span className="text-xs text-slate-500 font-bold uppercase tracking-wider">Email Inquiry</span>
+              <a href="mailto:chatradix@gmail.com" className="text-meta-blue hover:underline font-semibold mt-0.5">
+                chatradix@gmail.com
+              </a>
             </div>
           </section>
 

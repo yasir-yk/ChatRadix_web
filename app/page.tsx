@@ -351,20 +351,6 @@ export default function Home() {
                 </div>
               </a>
 
-              <a 
-                href="https://wa.me/923065335593" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="flex items-center gap-3.5 p-4 rounded-xl border border-slate-900 bg-slate-950/40 hover:border-slate-800 transition-colors"
-              >
-                <div className="p-2.5 rounded-lg bg-green-500/10 text-green-500">
-                  <MessageCircle className="h-5 w-5" />
-                </div>
-                <div>
-                  <span className="text-xs text-slate-500 block">WhatsApp Support</span>
-                  <span className="text-sm font-semibold text-slate-200">+92 306 5335593</span>
-                </div>
-              </a>
             </div>
           </div>
 
