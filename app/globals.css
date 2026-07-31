@@ -1,19 +1,21 @@
 @import "tailwindcss";
 
 @theme {
-  --color-meta-blue: #0668E1;
-  --color-dark-bg: #030712;
-  --color-dark-card: #0b1528;
-  --color-dark-border: #1e293b;
-  --color-cyan-glow: #06b6d4;
+  --color-primary-blue: #0080fb;
+  --color-primary-blue-dark: #0066cc;
+  --color-meta-green: #25d366;
+  --color-emerald-primary: #10b981;
+  --color-brand-navy: #0b132b;
+  --color-dark-card: #0f172a;
   --font-sans: var(--font-geist-sans), Arial, Helvetica, sans-serif;
   --font-mono: var(--font-geist-mono), monospace;
 }
 
 :root {
-  --background: #030712;
-  --foreground: #f8fafc;
-  --meta-blue: #0668E1;
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --primary-blue: #0080fb;
+  --meta-green: #25d366;
 }
 
 * {
@@ -38,41 +40,45 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #030712;
+  background: #f8fafc;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e293b;
+  background: #cbd5e1;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #0668E1;
+  background: #0080fb;
 }
 
-/* Background grid patterns */
+/* Light background grid patterns */
 .grid-bg {
-  background-size: 50px 50px;
+  background-size: 40px 40px;
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
 }
 
 .radial-glow {
-  background: radial-gradient(circle 800px at 50% 200px, rgba(6, 104, 225, 0.12), transparent 80%);
+  background: radial-gradient(circle 800px at 50% 150px, rgba(0, 128, 251, 0.12), transparent 75%);
 }
 
-.radial-glow-cyan {
-  background: radial-gradient(circle 500px at 50% 50%, rgba(6, 182, 212, 0.08), transparent 80%);
+.radial-glow-blue {
+  background: radial-gradient(circle 500px at 50% 50%, rgba(0, 128, 251, 0.15), transparent 75%);
 }
 
-/* Custom glow borders */
-.glow-hover:hover {
-  box-shadow: 0 0 25px rgba(6, 104, 225, 0.25);
-  border-color: rgba(6, 104, 225, 0.4);
+/* Custom card shadow & glow */
+.card-shadow {
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05), 0 4px 12px -2px rgba(0, 0, 0, 0.02);
 }
 
-.glow-active {
-  box-shadow: 0 0 35px rgba(6, 104, 225, 0.35);
-  border-color: rgba(6, 104, 225, 0.6);
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px -10px rgba(0, 128, 251, 0.15), 0 8px 16px -4px rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 128, 251, 0.4);
 }
 
 /* Hide scrollbar utility */
