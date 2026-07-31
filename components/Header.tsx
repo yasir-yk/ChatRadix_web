@@ -31,8 +31,8 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? "bg-white/90 backdrop-blur-md border-b border-slate-100 py-3 shadow-sm"
-          : "bg-white/60 backdrop-blur-sm py-4 border-b border-transparent"
+        ? "bg-white/90 backdrop-blur-md border-b border-slate-100 py-3 shadow-sm"
+        : "bg-white/60 backdrop-blur-sm py-4 border-b border-transparent"
         }`}
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -58,8 +58,7 @@ export default function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-6">
-            {/* <a
-              href="#contact"
+            {/* <a href="#contact"
               className="text-sm font-semibold text-slate-700 hover:text-[#0080FB] transition-colors"
             >
               Login
